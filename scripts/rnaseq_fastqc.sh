@@ -4,7 +4,7 @@
 #SBATCH -n 2
 #SBATCH -t 0:05:00
 #SBATCH -J run_fastqc
-#SBATCH --mail-type= ALL
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se
 
 #Load Molecules

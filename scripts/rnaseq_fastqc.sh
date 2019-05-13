@@ -12,7 +12,7 @@ module load bioinfo-tools
 module load FastQC/0.11.5
 
 #Your commands
-for filename in /home/shsr0481/Genome_Analysis/data/raw_data/*.fastq.gz
+for filename in /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/raw/*.fastq.gz
 	do
-		fastqc $filename -o /home/shsr0481/Genome_Analysis/results/1_Qualitycontrol_RNA/fastqc_result;
+		fastqc $filename -o /home/shsr0481/Genome_Analysis/results/1_Qualitycontrol_RNA/rnaseq_fastqc;
 	done

@@ -2,8 +2,8 @@
 
 #SBATCH -A g2019003
 #SBATCH -p core
-#SBATCH -n 4
-#SBATCH -t 04:00:00
+#SBATCH -n 2
+#SBATCH -t 02:00:00
 #SBATCH -J soapdenovo_dna_assembly_wgs
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se

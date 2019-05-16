@@ -11,13 +11,11 @@ module load bioinfo-tools
 module load trimmomatic
 
 #Your commands
-java -jar /sw/apps/bioinfo/trimmomatic/0.36/rackham/trimmomatic-0.36.jar PE -phred33 \
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/rackham/trimmomatic-0.36.jar PE -threads 2 -phred33 \
 /home/shsr0481/Genome_Analysis/data/rna_seq_data/raw/sel3/sel3_SRR1719266.1.fastq.gz \
 /home/shsr0481/Genome_Analysis/data/rna_seq_data/raw/sel3/sel3_SRR1719266.2.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_1P.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_1U.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_2P.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_2U.fastq.gz \
-
-#Above 4 lines are output files
-ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+ILLUMINACLIP:/sw/bioinfo/trimmomatic/0.36/rackham/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:17 MINLEN:36 

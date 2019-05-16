@@ -12,8 +12,8 @@ module load trimmomatic
 
 #Your commands
 java -jar /sw/apps/bioinfo/trimmomatic/0.36/rackham/trimmomatic-0.36.jar PE -phred33 \
-/home/shsr0481/Genome_Analysis/data/rna_seq_data/raw/sel3/sel3_SRR1719266.1.fastq.gz \
-/home/shsr0481/Genome_Analysis/data/rna_seq_data/raw/sel3/sel3_SRR1719266.2.fastq.gz \
+/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/raw/sel3_SRR1719266.1.fastq.gz \
+/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/raw/sel3_SRR1719266.2.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_1P.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_1U.fastq.gz \
 /home/shsr0481/Genome_Analysis/results/2_Trimming/rna_seq_data/raw/sel3_SRR1719266.trim_2P.fastq.gz \

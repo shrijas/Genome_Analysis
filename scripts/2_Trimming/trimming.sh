@@ -8,7 +8,7 @@
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se
 #Modules
 module load bioinfo-tools
-module load FastQC/0.11.5
+module load trimmomatic
 
 #Your commands
 java -jar /sw/apps/bioinfo/trimmomatic/0.36/rackham/trimmomatic-0.36.jar PE -phred33 \

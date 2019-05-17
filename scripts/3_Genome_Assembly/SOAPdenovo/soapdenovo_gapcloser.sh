@@ -1,6 +1,7 @@
 #!bin/batch
 #SBATCH -A g2019003
 #SBATCH -p core
+#SBATCH -n 2
 #SBATCH -t 02:00:00
 #SBATCH -J gapcloser_SOAPdenovo
 #SBATCH --mail-type=ALL

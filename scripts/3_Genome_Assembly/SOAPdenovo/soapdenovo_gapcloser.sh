@@ -11,5 +11,4 @@ module load bioinfo-tools
 module load soapdenovo/2.04-r240
 
 #Your comments
-/sw/apps/bioinfo/SOAPdenovo/2.04-r240/rackham/bin/GapCloser \
 SOAPdenovo-127mer all -s /home/shsr0481/GenomeAnalysis/scripts/3_Genome_Assembly/soapdenovo_config.txt -K 49 -F -R -o /home/shsr0481/Genome_Analysis/results/3_Genome_Assembly/SOAPdenovo/Closedgaps_gaps.fasta

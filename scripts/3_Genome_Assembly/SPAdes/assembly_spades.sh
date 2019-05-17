@@ -2,7 +2,7 @@
 #SBATCH -A g2019003
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 01:00:00
+#SBATCH -t 02:00:00
 #SBATCH -J genome_assembly_spades
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se

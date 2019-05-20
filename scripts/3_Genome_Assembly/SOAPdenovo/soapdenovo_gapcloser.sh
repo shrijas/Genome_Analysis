@@ -11,5 +11,6 @@ module load bioinfo-tools
 module load soapdenovo/2.04-r240
 
 # command
-
-GapCloser -b /home/shsr0481/Genome_Analysis/scripts/3_Genome_Assembly/SOAPdenovo/soapdenovo.config -a /home/shsr0481/Genome_Analysis/results/3_Genome_Assembly/SOAPdenovo/.scafSeq -o /home/shsr0481/Genome_Analysis/results/3_Genome_Assembly/SOAPdenovo/GapCloser_output.fasta
+GapCloser -b /home/shsr0481/Genome_Analysis/scripts/3_Genome_Assembly/SOAPdenovo/soapdenovo.config \
+-a /home/shsr0481/Genome_Analysis/results/3_Genome_Assembly/SOAPdenovo/output.scafSeq \
+-o /home/shsr0481/Genome_Analysis/results/3_Genome_Assembly/SOAPdenovo/GapCloser_output.fasta	

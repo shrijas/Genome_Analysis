@@ -1,15 +1,15 @@
-#!/bin/bash -l
+#!/bin/bash 
 #SBATCH -A g2019003
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t 4:00:00
+#SBATCH -t :00:00
 #SBATCH -J trinity_unpaired
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se
 
 # Load modules
 module load bioinfo-tools
-module load Trinity
+module load trinity
 module load samtools/1.9
 module load jellyfish/2.2.6
 module load Salmon/0.9.1
@@ -51,4 +51,4 @@ module load bowtie2/2.3.4.3
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719214.trim_2U.fastq.gz,\
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719241.trim_2U.fastq.gz,\
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719242.trim_2U.fastq.gz \
---output /home/shsr0481/Genome_Analysis/results/4_transcriptome_assembly/trinity-unpaired
+--output /home/shsr0481/Genome_Analysis/results/4_Transcriptome_Assembly/trinity-unpaired

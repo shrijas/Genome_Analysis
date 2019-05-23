@@ -2,20 +2,20 @@
 #SBATCH -A g2019003
 #SBATCH -p core
 #SBATCH -n 2
-#SBATCH -t :00:00
+#SBATCH -t 20:00:00
 #SBATCH -J trinity_unpaired
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user Shrija.Srinivasan.0481@student.uu.se
 
 # Load modules
 module load bioinfo-tools
-module load trinity
+module load trinity/2.8.2
 module load samtools/1.9
 module load jellyfish/2.2.6
 module load Salmon/0.9.1
 module load bowtie2/2.3.4.3
 
-/sw/bioinfo/trinity/2.8.2/rackham/Trinity --seqType fq --max_memory 10G \
+Trinity --seqType fq --max_memory 10G \
 --single \
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719013.trim_1U.fastq.gz,\
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719014.trim_1U.fastq.gz,\

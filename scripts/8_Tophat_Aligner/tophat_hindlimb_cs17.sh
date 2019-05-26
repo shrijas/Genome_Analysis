@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #SBATCH -A g2019003
 #SBATCH -p core
@@ -13,11 +12,11 @@ module load bioinfo-tools
 module load tophat
 
 ### Your commands
-tophat -o /home/shsr0481/Genome_Analysis/results/8_Tophat_Aligner/hindlimb/cs16 \
-/home/shsr0481/Genome_Analysis/results/7_Bowtie/ref \
+tophat -o /home/shsr0481/Genome_Analysis/results/8_Tophat_Aligner/hindlimb/cs17 \
+/home/shsr0481/Genome_Analysis/results/7_Bowtie/ \
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719213.trim_1P.fastq.gz,\
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719241.trim_1P.fastq.gz,\
-/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719266.trim_1P.fastq.gz \
+/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719206.trim_1P.fastq.gz \
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719213.trim_2P.fastq.gz,\
 /home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719241.trim_2P.fastq.gz,\
-/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719266.trim_2P.fastq.gz
+/home/shsr0481/Genome_Analysis/data/raw_data/sel3/rna_seq_data/trimmed/sel3_SRR1719206.trim_2P.fastq.gz

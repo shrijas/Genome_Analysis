@@ -6,4 +6,5 @@ Author: Shrija Srinivasan <br/>
 Email: Shrija.Srinivasan@student.uu.se
 
 <hr></hr>
+
 For more details check the Wiki!

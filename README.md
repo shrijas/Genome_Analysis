@@ -5,6 +5,5 @@ Course: Genome Analysis (1MB462) <br/>
 Author: Shrija Srinivasan <br/>
 Email: Shrija.Srinivasan@student.uu.se
 
-<hr>...</hr>
-
+<hr></hr>
 For more details check the Wiki!
